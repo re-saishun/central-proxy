@@ -1,3 +1,6 @@
+json\n";
+    body += JSON.stringify(data.data, null, 2);
+    body += "\n
 const https = require('https');
 
 // Helper function to make HTTPS requests with promises

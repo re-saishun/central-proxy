@@ -1,0 +1,34 @@
+"Saya ingin kamu membantu saya menyiapkan struktur Backend Serverless Functions untuk proyek proxy GitHub saya yang akan dideploy ke Vercel.
+
+Tujuan Proyek: Membuat jembatan (proxy) antara frontend website 'Adventure Diary' dengan GitHub API untuk menangani sistem kontribusi data (Items/Monsters) tanpa mengekspos GitHub Token saya di sisi klien.
+
+Struktur Folder yang Diminta:
+Tolong buatkan kode untuk file-file berikut dan letakkan semuanya di dalam folder: /api/adv-diary/
+
+Daftar File & Logika:
+
+contribute.js: Menerima data JSON dari form, lalu membuat issue baru di repo utama dengan label 'contribution'.
+
+list.js: Mengambil daftar semua issue terbuka dengan label 'contribution'. Membutuhkan ADMIN_TOKEN.
+
+approve.js: Membaca data dari issue, menambahkannya ke file JSON di repo utama (folder data/), lalu menutup issue. Membutuhkan ADMIN_TOKEN.
+
+reject.js: Menutup issue kontribusi dengan alasan penolakan tertentu. Membutuhkan ADMIN_TOKEN.
+
+Spesifikasi Teknis:
+
+Gunakan node-fetch@2.
+
+Gunakan variabel lingkungan (Environment Variables): GITHUB_TOKEN, REPO_OWNER, REPO_NAME, dan ADMIN_TOKEN.
+
+Semua response harus dalam format JSON.
+
+Pastikan path API merujuk pada folder /api/adv-diary/.
+
+Tolong berikan:
+
+Kode lengkap untuk keempat file tersebut.
+
+Struktur package.json yang diperlukan agar node-fetch terinstall.
+
+Penjelasan singkat cara mengisi Environment Variables di dashboard Vercel."
